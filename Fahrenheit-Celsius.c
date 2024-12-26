@@ -1,12 +1,14 @@
 #include <stdio.h>
 
-// version; 1.0.0
-/* version 1.0.1 updated function main to int main to no get the - warning: return type defaults to 'int' */
+// version; 1.0.0; integer version
+/* version; 1.0.1 updated function main to int main to not get
+    warning: return type defaults to 'int' */
+// version; 1.0.2 floating-point version
 /* print Fahrenhit-Celsius table
-    for feh = 0, 20, .... 300 */
+    for fahr = 0, 20, .... 300; floating-point version */
 int main()
 {
-    int fahr, celsius;
+    float fahr, celsius;
     int lower, upper, step;
 
     lower = 0; /* lower limit of temperature table */
@@ -15,8 +17,8 @@ int main()
 
     fahr = lower;
     while (fahr <= upper) {
-        celsius = 5 * (fahr-32) / 9;
-        printf("%d\t%d\n", fahr, celsius);
+        celsius = (5.0/9.0) * (fahr-32.0);
+        printf("%3.0f %6.1f\n", fahr, celsius);
         fahr = fahr + step;
     }
 }
