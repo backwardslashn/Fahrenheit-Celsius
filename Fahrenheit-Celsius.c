@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-/* version; 1.0.0 */
+// version; 1.0.0
 /* version 1.0.1 updated function main to int main to no get the - warning: return type defaults to 'int' */
 /* print Fahrenhit-Celsius table
     for feh = 0, 20, .... 300 */
