@@ -11,14 +11,14 @@ int main()
     printf("Fahrenhit-Celsius table\n");
 
     float fahr, celsius;
-    int lower, upper, step;
+    int lower, step;
 
-    lower = 0; /* lower limit of temperature table */
-    upper = 300; /* upper limit */
-    step = 20; /* step size */
+    lower = 0;           /* lower limit of temperature table */
+    #define UPPER 300    /* upper limit */
+    step = 20;           /* step size */
 
     fahr = lower;
-    while (fahr <= upper) {
+    while (fahr <= UPPER) {
         celsius = (5.0 / 9.0) * (fahr - 32.0);
         printf("%3.0f %11.1f\n", fahr, celsius);
         fahr = fahr + step;
